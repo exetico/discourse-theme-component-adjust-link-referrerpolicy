@@ -4,7 +4,7 @@ export default {
   name: "link-referrerpolicy-init",
   initialize(container) {
     withPluginApi("0.8.41", (api) => {
-      const ignoredDomains = /(amazon|amazn)/g;
+      const ignoredDomains = /(amazon|amazn)/;
       const isNoRefPolicyLink = (link) => {
         let href = link.getAttribute("href")
           ? link.getAttribute("href").toLowerCase()
